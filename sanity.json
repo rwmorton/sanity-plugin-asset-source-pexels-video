@@ -1,0 +1,29 @@
+{
+  "paths": {
+    "compiled": "./dist",
+    "source": "./src"
+  },
+  "parts": [
+    {
+      "name": "part:sanity-plugin-asset-source-pexels-video/image-asset-source",
+      "implements": "part:@sanity/base/tool",
+      "path": "bundle.js"
+    },
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "./lib/schemas/pexelsVideo.js"
+    },
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "./lib/schemas/pexelsVideoAsset.js"
+    },
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "./lib/schemas/pexelsVideoFile.js"
+    },
+    {
+      "implements": "part:@sanity/base/schema-type",
+      "path": "./lib/schemas/pexelsVideoUser.js"
+    }
+  ]
+}
